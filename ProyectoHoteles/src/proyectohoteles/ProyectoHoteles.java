@@ -14,7 +14,7 @@ public class ProyectoHoteles {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("MEnsaje de prueba 3");
+        System.out.println("MEnsaje de prueba 4 - JorgeCruzUPC" );
 
     }
 }
