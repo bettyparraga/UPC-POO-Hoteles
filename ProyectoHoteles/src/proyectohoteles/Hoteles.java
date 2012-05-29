@@ -15,7 +15,30 @@ import java.util.ArrayList;
 public class Hoteles {
    private String nombre;
    private String lista;
+   private String direccionweb;
    //private String pais;
+
+    public Hoteles() {
+        //this.nombre = nombre;
+        // this.pais = pais;
+    }
+    public Hoteles(String nombre) {
+        this.nombre = nombre;
+       // this.pais = pais;
+    }
+    
+    public Hoteles(String nombre, String direccionweb){
+        this.nombre = nombre;
+        this.direccionweb = direccionweb;
+    }
+
+    public void setDireccionweb(String direccionweb) {
+        this.direccionweb = direccionweb;
+    }
+
+    public String getDireccionweb() {
+        return direccionweb;
+    }
 
     public String getLista() {
         return lista;
@@ -33,10 +56,6 @@ public class Hoteles {
         return pais;
     }*/
 
-    public Hoteles(String nombre) {
-        this.nombre = nombre;
-       // this.pais = pais;
-    }
 
     public boolean  datosHotel(){
            if (nombre.equals("")){

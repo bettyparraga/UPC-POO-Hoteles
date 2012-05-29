@@ -2,13 +2,50 @@
 package proyectohoteles;
 
 public class Cuenta {
-    
         private String nombre;
         private String clave1;
         private String clave2;
         private String email;
         private Hoteles hoteles;
 
+    public Cuenta(String nombre){
+        this.nombre = nombre;
+    }
+ 
+    public Cuenta(String nombre, String email){
+        this.nombre = nombre;
+        this.email = email;
+    }
+    
+    public Cuenta(String nombre, String email, String clave1){
+        this.nombre = nombre;
+        this.clave1 = clave1;
+        this.clave2 = clave2;
+        this.email = email;
+    }
+
+    public Cuenta(String nombre, String email, String clave1, String clave2){
+        this.nombre = nombre;
+        this.clave1 = clave1;
+        this.clave2 = clave2;
+        this.email = email;
+    }
+
+        public Cuenta(String nombre,String email,String clave1, Hoteles hoteles){
+        this.nombre = nombre;
+        this.email = email;
+        this.clave1 = clave1;
+        this.hoteles = hoteles;
+    }
+
+    /*
+    public Cuenta(String nombre,String email,String clave1,String clave2){
+        this.nombre = nombre;
+        this.clave1 = clave1;
+        this.clave2 = clave2;
+        this.email = email;
+    }
+*/
     public String getEmail() {
         return email;
     }
@@ -20,9 +57,9 @@ public class Cuenta {
     public void setHoteles(String nombre){
         this.hoteles = new Hoteles (nombre);
     }
-    public Hoteles getHoteles(){
-    return this.hoteles;
 
+    public Hoteles getHoteles(){
+        return this.hoteles;
     }
 
     public String getClave2() {
@@ -48,13 +85,6 @@ public class Cuenta {
     }
 //  private Reserva reserva;
 
-    public Cuenta(String nombre,String email,String clave1,String clave2){
-        this.nombre = nombre;
-        this.clave1 = clave1;
-        this.clave2 = clave2;
-        this.email = email;
-
-   }
    
     public  boolean validaNombre(){
             if (nombre.equals("")){

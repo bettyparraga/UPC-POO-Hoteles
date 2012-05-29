@@ -14,19 +14,5 @@ import org.junit.BeforeClass;
  * @author USUARIO
  */
 public class ProyectoHotelesTest {
-    
-    public ProyectoHotelesTest() {
-    }
 
-    @BeforeClass
-    public static void setUpClass() throws Exception {
-    }
-
-    @AfterClass
-    public static void tearDownClass() throws Exception {
-    }
-
-    @Test
-    public void testSomeMethod() {
-    }
 }

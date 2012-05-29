@@ -16,11 +16,23 @@ import org.junit.BeforeClass;
  * @author USUARIO
  */
 public class HotelesTest {
+/*
     @Test
     public void detalleDeListaSugerida(){
       Hoteles otrosHoteles = new Hoteles("CLERK HOTEL");
         assertNotNull(otrosHoteles.listaHoteles());
-    } 
-            
-     
+    }
+    */
+    @Test
+    public void hotelDebeTenerNombre(){
+      Hoteles hotel = new Hoteles("Hotel Clerk");
+        assertNotNull(hotel.getNombre());
+    }      
+
+    @Test
+    public void hotelDebeTenerDireccionWeb(){
+      Hoteles hotel = new Hoteles("Hotel Clerk","http://www.hotelclerk.com");
+        assertNotNull(hotel.getDireccionweb());
+    }
+
 }
