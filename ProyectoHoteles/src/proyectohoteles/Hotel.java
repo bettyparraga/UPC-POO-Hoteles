@@ -1,3 +1,4 @@
+﻿
 package proyectohoteles;
 
 import java.io.BufferedReader;
