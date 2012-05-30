@@ -1,5 +1,3 @@
-﻿
-
 package proyectohoteles;
 
 public class Cuenta {
