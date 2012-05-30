@@ -35,7 +35,7 @@ public class Cuenta {
             this.email = email;
             this.clave = clave;
             this.hotel = new Hotel(hotel);
-            System.out.println("\n Cuenta creada exitosamente. Tiene 24 horas \npara confirmar la recepción del e-mail");
+            System.out.println("\nCuenta creada exitosamente. Tiene 24 horas \npara confirmar la recepción del e-mail");
         }
         else{
             System.out.println("La cuenta no ha sido creada");
