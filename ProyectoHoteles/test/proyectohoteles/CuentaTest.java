@@ -17,8 +17,7 @@ public class CuentaTest {
     }
     @Test
     public void cuentaDebeTenerHotel() {
-        Hotel hotel = new Hotel("Hotel Clerk");
-        Cuenta cuenta = new Cuenta("jcruzac@hotmail.com",hotel);
+        Cuenta cuenta = new Cuenta("jcruzac@hotmail.com","clave","Hotel Clerk");
         assertNotNull(cuenta.getHotel().getNombre());
     }
     @Test

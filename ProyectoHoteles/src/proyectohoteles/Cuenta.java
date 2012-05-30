@@ -13,9 +13,10 @@ public class Cuenta {
         this.clave = clave;
         this.email = email;
     }
-    public Cuenta(String email, Hotel hotel){
+    public Cuenta(String email, String clave, String hotel){
         this.email = email;
-        this.hotel = hotel;
+        this.clave = clave;
+        this.hotel = new Hotel(hotel);
     }
 
     public Cuenta(String email,String clave, String reclave, String hotel,String aceptacondiciones){
@@ -34,7 +35,7 @@ public class Cuenta {
             this.email = email;
             this.clave = clave;
             this.hotel = new Hotel(hotel);
-            System.out.println("Cuenta creada exitosamente. Tiene 24 horas \npara confirmar la recepción del e-mail");
+            System.out.println("\n Cuenta creada exitosamente. Tiene 24 horas \npara confirmar la recepción del e-mail");
         }
         else{
             System.out.println("La cuenta no ha sido creada");
@@ -125,4 +126,3 @@ public class Cuenta {
         this.clave = clave;
     }
 }
-

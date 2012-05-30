@@ -9,10 +9,11 @@ public class Hotel {
    private String direccionweb;
 
     public Hotel(String nombre) {
-       boolean nombreOK= validaIngresoNombre(nombre);
-       if (nombreOK){
+       boolean nombreOK = validaIngresoNombre(nombre);
+       String direccionWeb = listaDePosiblesDireccionesWeb(nombre);
+       if ( nombreOK ){
         this.nombre = nombre;
-        this.direccionweb = listaDePosiblesDireccionesWeb(nombre);
+        this.direccionweb = direccionWeb;
        }else{
             System.out.println("El Hotel no ha sido creado");
        }
@@ -49,13 +50,18 @@ public class Hotel {
         System.out.println("3.- "+ opcion3);
         System.out.println("4.- "+ opcion4);
         System.out.println("5.- "+ opcion5);
+        
+        System.out.println("Seleccione una opción: ");
+
+/*
+//quitar el comentario para el ejecutar el programa
         try {
             opcion=in.readLine();
             } catch (Exception e) {
         }
-        
+      op = Integer.parseInt(opcion);
+*/        
        op = 2; //para el test
-//      op = Integer.parseInt(opcion);//para el ejecutar el programa
         switch ( op ){
             case 1:
                 retorno = opcion1;
