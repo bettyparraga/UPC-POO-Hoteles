@@ -15,7 +15,7 @@ public class ProyectoHoteles {
         String email = "jcruzac";
         String clave = "miclave";
         String reclave = "miclave";
-        String hotel = "All in Olivos";
+        String hotel = "All in Olivoss";
         String aceptaCondiciones = "NO";
         
         Cuenta cuenta = new Cuenta(email,clave,reclave,hotel,aceptaCondiciones);
